@@ -1,0 +1,10 @@
+Projet fait avec l'aide de Chat-GPT.
+
+Commandes docker 
+
+Image construite sous Windows mais exploitable sous raspberry :
+docker buildx build --platform linux/arm64 -t bertolen/opencv-python-app:arm .
+
+Container sous linux
+docker run -it --device=/dev/video0 --rm -p 5000:5000 --name opencv-webcam bertolen/opencv-python-app:arm
+
