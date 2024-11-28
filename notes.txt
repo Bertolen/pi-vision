@@ -8,3 +8,5 @@ docker buildx build --platform linux/arm64 -t bertolen/opencv-python-app:arm .
 Container sous linux
 docker run -it --device=/dev/video0 --rm -p 5000:5000 --name opencv-webcam bertolen/opencv-python-app:arm
 
+Pour consulter le flux de la webcam il faut aller sur http://<adresse ip de l'hôte>:5000/video_feed
+L'adresse ip de l'hôte peut être trouvée avec la commande ifconfig sur la raspberry-pi
